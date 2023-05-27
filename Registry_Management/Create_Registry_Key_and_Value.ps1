@@ -1,6 +1,6 @@
 <# 
     .SYNOPSIS
-    Script to create new registry key.
+    Script to create new registry key.nnn
 
     .DESCRIPTION    
     This used to check for key path and then create the key path.

@@ -43,15 +43,11 @@ Try {
     #=======================================================
     # Displays list of files to be altered and Logs to File
     #=======================================================    
-    # set the new color
-    $host.UI.RawUI.ForegroundColor = "Green"
-    Write-Output  "Files to be Chankged: `n"
+     Write-Output  "Files to be Chankged: `n"
     Get-Date | Out-File C:\temp\FilesChanged.txt -Append
     $MyfileNew.Name | Tee-Object C:\temp\FilesChanged.txt -Append
     Write-Output ""
     Pause
-    # set the new color
-    $host.UI.RawUI.ForegroundColor = "white"
 
     #============================================
     # Loop Through All File Names 
