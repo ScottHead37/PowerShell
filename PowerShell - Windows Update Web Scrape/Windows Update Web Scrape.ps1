@@ -8,7 +8,7 @@ Do{
     # Instnatiate Array
     $Lines=@()
     # Get Webpage Data
-    (Invoke-WebRequest -Uri "https://www.catalog.update.microsoft.com/Search.aspx?q=2023-0$x Cumulative Update for Windows Server 2016 for x64-based Systems").Content | Out-File C:\temp\2016-$X.txt
+    (Invoke-WebRequest -Uri "https://www.catalog.update.microsoft.com/Search.aspx?q=2025-0$x Cumulative Update for Windows Server 2016 for x64-based Systems").Content | Out-File C:\temp\2016-$X.txt
     #Export Data Out to File
     $Lines= Get-Content C:\temp\2016-$X.txt  
     #Loop Through Each File to Get KB Output
@@ -31,7 +31,7 @@ Do{
     # Instnatiate Array
     $Lines=@()
     # Get Webpage Data
-    (Invoke-WebRequest -Uri "https://www.catalog.update.microsoft.com/Search.aspx?q=2023-0$x Cumulative Update for Windows Server 2019 for x64-based Systems").Content | Out-File C:\temp\2019-$X.txt
+    (Invoke-WebRequest -Uri "https://www.catalog.update.microsoft.com/Search.aspx?q=2025-0$x Cumulative Update for Windows Server 2019 for x64-based Systems").Content | Out-File C:\temp\2019-$X.txt
     #Export Data Out to File
     $Lines= Get-Content C:\temp\2019-$X.txt  
     #Loop Through Each File to Get KB Output
@@ -53,7 +53,7 @@ Do{
     # Instnatiate Array
     $Lines=@()
     # Get Webpage Data
-    (Invoke-WebRequest -Uri "https://www.catalog.update.microsoft.com/Search.aspx?q=2023-0$X Cumulative Update for Microsoft server operating system version 21H2 for x64-based Systems").Content | Out-File C:\temp\2022-$X.txt
+    (Invoke-WebRequest -Uri "https://www.catalog.update.microsoft.com/Search.aspx?q=2025-0$X Cumulative Update for Microsoft server operating system version 21H2 for x64-based Systems").Content | Out-File C:\temp\2022-$X.txt
     #Export Data Out to File
     $Lines= Get-Content C:\temp\2022-$X.txt  
     #Loop Through Each File to Get KB Output
