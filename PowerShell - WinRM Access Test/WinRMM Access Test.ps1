@@ -1,8 +1,24 @@
-# Requires the Active Directory Modle 
-# Requires Export Folder C:\Temp
-# Requires PowerShell version 3+
-# Requires Windows Remote Management Running on Remote Systems
-# Webiste - https://www.scriptsbyscott.com/check-connections
+<#
+        .SYNOPSIS
+        Requires the Active Directory Module 
+        Requires Export Folder C:\Temp
+        Requires PowerShell version 3+
+        Requires Windows Remote Management Running on Remote Systems
+
+        .DESCRIPTION
+        Pulls system information from Active Directory and tests WinRM access on each machine. 
+        Results are then exported to file.  
+        
+        .INPUTS
+        Active Directory 
+
+        .OUTPUTS
+        Export WinRM Failures to txt files C:\temp
+
+        .LINK
+        Online Website: https://www.scriptsbyscott.com/check-connections 
+
+    #>
 
 # Get list of enabled computers from Active Directory
 $ComputerList= Get-Adcomputer -filter * | Where-Object{$_.Enabled -eq $True} | Select-Object -ExpandProperty Name
