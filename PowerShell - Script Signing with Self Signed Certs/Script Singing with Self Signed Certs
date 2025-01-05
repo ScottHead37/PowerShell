@@ -1,0 +1,45 @@
+# -- Webiste Post of Script: https://www.scriptsbyscott.com/copy-of-powershell-script-library-1
+# Create a self-signed code signing certificate and store it in the Current User's Personal certificate store
+$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Type CodeSigningCert -Subject "CN=Internal_Certificate"
+
+# Define the export path and password Update Password to You Liking
+$pfxPath = "C:\Cert\MyCertificate.pfx"
+$password = ConvertTo-SecureString -String "Games!arefun!2Play@" -Force -AsPlainText
+
+# Export the certificate to a .pfx file
+Export-PfxCertificate -Cert $cert -FilePath $pfxPath -Password $password
+
+# Import the Certificate Provider module if not already available
+Import-Module PKI
+
+# Retrieve the code signing certificate from the Current User's Personal certificate store
+$cert = Get-ChildItem -Path Cert:\LocalMachine\Root | Where-Object { $_.Subject -eq "CN=Internal_Certificate" }
+
+# Path to your script
+$scriptPath = "C:\PowerShell\myscript.ps1"
+
+# Sign the script using the retrieved certificate
+Set-AuthenticodeSignature -FilePath $scriptPath -Certificate $cert
+
+# -------------Check the current execution policy------------------
+Get-ExecutionPolicy
+
+# Open PowerShell as Administrator and set the execution policy
+Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope LocalMachine
+
+# --------------------------------------------------------------------------
+# --- Manually Import the PFX file into the root store on the machine ! ----
+# --------------------------------------------------------------------------
+
+#------------------- Verification--------------------------------
+# Replace with the path to your script
+$scriptPath = "C:\PowerShell\myscript.ps1"
+
+# Retrieve the signature information
+$signature = Get-AuthenticodeSignature -FilePath $scriptPath
+
+# Display the signature status
+$signature.Status
+
+# Run the script once in Powershell and set to allays allow when prompted.
+# Now if the script is alerted in any way the hash mismatch appears and stops execution
