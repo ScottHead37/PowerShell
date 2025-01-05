@@ -1,4 +1,24 @@
-# -- Webiste Post of Script: https://www.scriptsbyscott.com/copy-of-powershell-script-library-1
+<#
+        .SYNOPSIS
+        Requires PKI Module 
+
+        .DESCRIPTION
+        Create a self-signed code signing certificate and store it in the Current User's Personal certificate store
+        Retrieve the code signing certificate from the Current User's Personal certificate store
+        Sign the script using the retrieved certificate
+        Run the script once in Powershell and set to allays allow when prompted.
+        Now if the script is alerted in any way the hash mismatch appears and stops execution
+
+        .INPUTS        
+
+        .OUTPUTS        
+
+        .LINK
+        Online Website: https://www.scriptsbyscott.com/copy-of-powershell-script-library-1
+
+    #>
+
+
 # Create a self-signed code signing certificate and store it in the Current User's Personal certificate store
 $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Type CodeSigningCert -Subject "CN=Internal_Certificate"
 
