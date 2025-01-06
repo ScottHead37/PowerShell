@@ -14,7 +14,7 @@
 Add-Type -AssemblyName 'System.Data'
 
 # Define the connection string
-$connectionString = 'Server=Blacky\SQLExpress;Database=Test; User Id=SA;Password=Quakeiii123;'
+$connectionString = 'Server=Blacky\SQLExpress;Database=Test; User Id=SA;Password=YourPassword;'
 
 # Initialize the connection
 $connection = New-Object System.Data.SqlClient.SqlConnection
