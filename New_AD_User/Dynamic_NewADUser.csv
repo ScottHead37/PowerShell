@@ -1,0 +1,2 @@
+SMTP,MailTo,MailFrom,MailSubject,MailBody,LogFile
+smtp.gmail.com,shead@ScriptsbyScott.com,Scotthead37@Gmail.com,New User Active Directory User Info,See Attached File for details on user information on list from NewUserInput.csv,C:\temp\New_User_Lofile.log

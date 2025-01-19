@@ -1,0 +1,4 @@
+SamAccountName,UserPrincipalName,Name,GivenName,Surname,DisplayName,Department,Title,Office,Company,Description,EmailAddress,Password,OU
+jdoe,jdoe@scott.local,John Doe,John,Doe,John Doe,Sales,Sales Representative,New York,Fictitious Corp,New Sales Rep,jdoe@fictitiouscorp.com,P@ssw0rd1234,"OU=Student,DC=Scott,DC=local"
+asmith,asmith@Scott.local,Alice Smith,Alice,Smith,Alice Smith,Marketing,Marketing Manager,Los Angeles,Fictitious Corp,Marketing Lead,asmith@fictitiouscorp.com,P@ssw0rd1235,"OU=Student,DC=Scott,DC=local"
+bjones,bjones@Scott.local,Bob Jones,Bob,Jones,Bob Jones,IT,System Administrator,Chicago,Fictitious Corp,IT Admin,bjones@fictitiouscorp.com,P@ssw0rd1236,"OU=Student,DC=Scott,DC=local"

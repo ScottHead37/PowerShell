@@ -1,0 +1,2 @@
+SMTP,MailTo,MailFrom,MailSubject,MailBody
+smtp.gmail.com,shead@ScriptsbyScott.com,Scotthead37@Gmail.com,Active Directory User Info,See Attached File for details on user information on list from Users.txt

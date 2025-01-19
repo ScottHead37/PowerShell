@@ -1,0 +1,6 @@
+2025-01-18 20:25:40 - CSV file imported and Values Assigned Dynamic_SetADUser.csv
+2025-01-18 20:25:40 - Active Directory module imported successfully.
+2025-01-18 20:25:40 - CSV file imported successfully from C:\PS\Set_AD_User\UserInput.csv.
+2025-01-18 20:25:40 - Successfully updated user: jsmith  Title MyTitle Department myDept Office MyOffice Company MyCompany Description MyOffice, myDept, MyTitle
+2025-01-18 20:25:40 - Successfully updated user: jjones  Title Title2 Department Departm2 Office Office2 Company Company2 Description Office2, Departm2, Title2
+2025-01-18 20:25:40 - Script completed.
