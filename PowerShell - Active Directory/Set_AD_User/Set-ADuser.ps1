@@ -47,7 +47,7 @@ try {
     $csvPath = Join-Path -Path $PSScriptRoot -ChildPath 'Dynamic_SetADUser.csv'
     $Dynamic = Import-csv -Path $csvPath -ErrorAction Stop
 
-    # Construct to have csv pulled from same DIR as script path
+    # Construct to have Log gile in same DIR as script path
     $LogPath = Join-Path -Path $PSScriptRoot -ChildPath 'Set_ADUser.Log'
     $LogFile = $LogPath   # Current DIR log file path
 

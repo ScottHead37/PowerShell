@@ -31,11 +31,11 @@ $SMTPServer = $Dynamic.SMTP
 $Subject = $Dynamic.MailSubject 
 $Body = $Dynamic.MailBody
 
-### Import list of users Query From TXT File ###
+### Import list of users to Query From from same DIR as Script ###
 $TXTPath = Join-Path -Path $PSScriptRoot -ChildPath 'Users.txt'
 $Users = Get-Content $TXTPath
 
-### Import list of users Query From TXT File ###
+### Output File Path Same as Script DIR ###
 $ExportPath = Join-Path -Path $PSScriptRoot -ChildPath 'ExportUserData.csv'
 
  ### Loop and Query Users, Format, Export ###
