@@ -1,0 +1,10 @@
+2025-01-19 22:58:06 - Import SendMail Module,  Mail.csv File, Attachmetn Filepath
+2025-01-19 22:58:07 - Get-ADuser and Export to CSV File
+2025-01-19 23:00:25 - Import SendMail Module,  Mail.csv File, Attachmetn Filepath
+2025-01-19 23:00:25 - Get-ADuser and Export to CSV File
+2025-01-19 23:19:57 - Import SendMail Module,  Mail.csv File, Attachmetn Filepath
+2025-01-19 23:19:57 - Get-ADuser and Export to CSV File
+2025-01-19 23:19:59 - Send Email and Attach CSV File C:\PS\Logger and SendMail Temaplte for Use\Get-ADuserInfo.csv
+2025-01-19 23:21:49 - Import SendMail Module,  Mail.csv File, Attachmetn Filepath
+2025-01-19 23:21:49 - Get-ADuser and Export to CSV File
+2025-01-19 23:21:50 - Send Email and Attach CSV File Get-ADuserInfo.csv
