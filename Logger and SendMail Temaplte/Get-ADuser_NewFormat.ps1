@@ -37,7 +37,7 @@ try{
     exit    
 }
 
-#============================================== Mail Body of Script where tasks are performed and error handling ============================================
+#============================================== Main Body of Script where tasks are performed and error handling ============================================
 
 try {
     # Import the ActiveDirectory module
