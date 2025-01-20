@@ -1,0 +1,2 @@
+EmailTo,EmailFrom,Subject,Body,Filename,SMTPServer
+shead@scriptsbyscott.com,Scotthead37@gmail.com,Get-ADuser Info and post to CSV,Body of Email for Editing and Materiual about the script,Get-ADuserInfo.csv,smtp.gmail.com
